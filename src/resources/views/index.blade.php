@@ -61,8 +61,7 @@
         </div>
         <div class="form__group">
             <div class="form__group-title">
-                <span class="form__label--item">お問い合わせ</span>
-                <span class="form__label--required">必須</span>
+                <span class="form__label--item">お問い合わせ内容</span>
             </div>
             <div class="form__group-content">
                 <div class="form__input--content">

@@ -36,12 +36,13 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 10px;
-    color: #aaa;
+
 }
 .error{
     height: 20px;
     color: #ff0000;
     width: 100%;
+    padding-top: 5px;
 }
 .contact-item__textarea{
     width: 70%;
@@ -52,7 +53,6 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 10px;
-    color: #aaa;
     height: 100%;
 }
 .contact-form__button{

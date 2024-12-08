@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-
+https://claude.ai/chat/ca79a5e3-b746-45f0-9dca-3fafecbef626
 /*
 |--------------------------------------------------------------------------
 | Web Routes

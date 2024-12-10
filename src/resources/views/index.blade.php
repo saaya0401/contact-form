@@ -59,6 +59,9 @@
                     <span class="contact-item__name">お問い合わせ内容</span>
                 </div>
                 <div class="contact-item__textarea">
+                    <select class="category-select">
+                        <option value="">カテゴリ</option>
+                    </select>
                     <textarea name="content" placeholder="資料をいただきたいです" >{{old('content')}}</textarea>
                 </div>
             </div>

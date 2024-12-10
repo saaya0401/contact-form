@@ -5,10 +5,23 @@
     max-width: 1230px;
     margin: 0 auto;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header__logo{
     font-size: 26px;
     font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.header-nav{
+    display: flex;
+}
+.header-nav__item{
+    padding:0 20px ;
+}
+.header-nav__link{
     text-decoration: none;
     color: #fff;
 }

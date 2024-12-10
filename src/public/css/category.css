@@ -1,0 +1,97 @@
+
+.alert-success{
+    background-color:rgb(166, 219, 202);
+    padding: 10px;
+}
+.alert-success__text{
+    margin: 0;
+    font-weight: 550;
+    color: rgb(0, 106, 0);
+}
+.alert-danger{
+    background-color: rgb(233, 199, 199);
+    padding: 10px;
+}
+.alert-danger ul{
+    margin: 0;
+    padding:0 10px ;
+}
+.alert-danger ul li{
+    padding: 0;
+    color: rgb(114, 0, 0);
+    font-weight: 550;
+}
+.category{
+    max-width: 1230px;
+}
+.category-create{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.category-input{
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+}
+.create-button{
+    width: 20%;
+}
+.create-button__submit{
+    width: 100%;
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.category-table{
+    width: 70%;
+    margin: 0 auto;
+}
+.table-row{
+    border-bottom: 1px solid #ddd;
+}
+.table-header{
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.table__category-update{
+    padding: 10px;
+    width: 90%;
+}
+.update-form{
+    display: flex;
+    justify-content: space-between;
+}
+.category-name{
+    outline: none;
+    border: none;
+    width: 80%;
+    font-size: 16px;
+}
+
+.update-button__submit{
+    padding:7px 13px;
+    border: none;
+    border-radius: 3px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+.table__category-delete{
+    
+    padding: 10px;
+}
+.delete-button__submit{
+    background-color: red;
+    padding: 7px 13px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+}

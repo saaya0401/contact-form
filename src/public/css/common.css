@@ -1,0 +1,21 @@
+*{
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.header-title{
+    text-align: center;
+}
+.header-logo{
+    text-decoration: none;
+    color: #8B7969;
+    font-size: 40px;
+}

@@ -1,21 +1,33 @@
 *{
-    font-family: "Inika", serif;
+    font-family: "Inika";
     font-weight: 400;
     font-style: normal;
 }
+.header {
+    border-bottom: 1px #E0DFDE solid;
+}
+
 .header-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     max-width: 1230px;
     margin: 0 auto;
     padding: 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
 .header-title{
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-shrink: 0;
 }
 .header-logo{
     text-decoration: none;
     color: #8B7969;
     font-size: 40px;
+    text-align: center;
+}
+.header-button{
+    margin-left: auto;
 }

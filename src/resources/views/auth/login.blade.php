@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 @section('button')
-<form action="/register" method="get" class="form">
+<form action="/register" method="get" class="header-form">
     @csrf
     <button class="header-nav__button">register</button>
 </form>
@@ -22,7 +22,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="email" name="email" value="{{ old('email') }}" />
+                    <input type="email" name="email" value="{{ old('email') }}" placeholder="例: test@example.com" />
                 </div>
                 <div class="form__error">
                     @error('email')
@@ -37,7 +37,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="password" name="password" />
+                    <input type="password" name="password" placeholder="例: coachtech1106"/>
                 </div>
                 <div class="form__error">
                     @error('password')

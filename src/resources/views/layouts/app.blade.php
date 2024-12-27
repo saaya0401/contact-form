@@ -18,8 +18,8 @@
                 <a href="/" class="header-logo">FashionablyLate</a>
             </div>
             <div class="header-button">
-                @yield('button')
-            </div>
+                    @yield('button')
+                </div>
         </div>
     </header>
     <main>

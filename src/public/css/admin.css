@@ -1,0 +1,304 @@
+.header-nav__button {
+    padding: 2px 20px;
+    font-size: 20px;
+    color: #D9C6B5;
+    border: 1px solid #D9C6B5;
+    cursor: pointer;
+    background-color: #F6F6F6;
+}
+.admin__content {
+    padding: 40px;
+    height: 90vh;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+
+.admin__heading h2 {
+    margin: 0;
+    color: #8B7969;
+    font-size: 35px;
+}
+
+.admin__heading {
+    text-align: center;
+    padding: 0 0 40px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.admin__search-form {
+    display: flex;
+    width: 89%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-keyword {
+    width: 350px;
+    height: 50px;
+}
+
+.search-keyword__input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border: 1px #E3DED9 solid;
+    border-radius: 3px;
+    background-color: #FBFBFB;
+    color: #8B7969;
+    font-size: 16px;
+}
+
+.search-keyword__input::placeholder{
+    color: #BEB1A6;
+}
+.search-gender {
+    width: 100px;
+    height: 50px;
+    position: relative;
+}
+
+.search-gender__select {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: #8B7969;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #E3DED9;
+    background-color: #F5F5F5;
+    appearance: none;
+}
+
+.search-gender::after {
+    content: "";
+    position: absolute;
+    background: url(../img/Polygon3.png) no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 15px;
+    top: 24px;
+    right:15px;
+    transform: translate(0, -50%);
+}
+
+.search-category::after {
+    content: "";
+    position: absolute;
+    background: url(../img/Polygon3.png) no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 15px;
+    top: 24px;
+    right: 15px;
+    transform: translate(0, -50%);
+}
+
+.search-category {
+    width: 220px;
+    height: 50px;
+    position: relative;
+}
+
+.search-category__select {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: #8B7969;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #E3DED9;
+    background-color: #F5F5F5;
+    appearance: none;
+}
+
+.search-date {
+    width: 160px;
+    position: relative;
+    height: 50px;
+}
+
+.search-date__input {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: #8B7969;
+    padding: 10px 10px 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #E3DED9;
+    background-color: #F5F5F5;
+    appearance: none;
+    
+}
+
+.search-date::after {
+    content: "";
+    position: absolute;
+    background: url(../img/Polygon3.png) no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 15px;
+    top: 24px;
+    right: 20px;
+    z-index: 0;
+    transform: translate(0, -50%);
+}
+.search-date__input::-webkit-calendar-picker-indicator{
+    opacity: 0;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+}
+.search-button {
+    height: 50px;
+    width: 100px;
+}
+
+.search-button__submit {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    background-color: #82756A;
+    border: 1px solid #8B7969;
+    border-radius: 3px;
+}
+
+.reset-button {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9C6B5;
+    border: 1px solid #D9C6B5;
+    border-radius: 3px;
+}
+
+.reset__link {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+}
+.export-button {
+    width: 150px;
+    background-color: #E1DBD699;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-action {
+    margin: 40px 0px 25px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.export-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #8B7969;
+    font-size: 18px;
+}
+
+.paginate-area {
+    width: 200px;
+    background-color: brown;
+    height: 100%;
+}
+.admin-form {
+    width: 100%;
+    border: 1px solid #E0DFDE;
+}
+
+.admin-form__row-header {
+    width: 100%;
+    background-color: #8B7969;
+}
+.admin-form {
+    width: 100%;
+    border: 1px solid #E0DFDE;
+}
+
+.admin-form__row-header {
+    width: 100%;
+    background-color: #8B7969;
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+}
+.admin-form__header-name {
+    width: 15%;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.admin-form__header-gender {
+    width: 10%;
+    font-weight: 700;
+}
+
+.admin-form__header-email {
+    width: 30%;
+    font-weight: 700;
+}
+
+.admin-form__header-category {
+    width: 45%;
+    font-weight: 700;
+}
+
+.admin-form__row {
+    height: 60px;
+    border-bottom: 1px solid #E0DFDE;
+    color: #8B7969;
+    font-size: 18px;
+    text-align: left;
+}
+
+.admin-form__row:last-child {
+    border-bottom-width: 0;
+}
+
+
+.admin-form__content:first-child {
+    padding-left: 30px;
+}
+
+.admin-form__content:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.admin-form__button {
+    text-align: right;
+    margin-right: 50px;
+    width: 70px;
+}
+
+.admin-form__modal {
+    border: 1px solid #D9C6B599;
+    background-color: #f4f4f460;
+    border-radius: 3px;
+    padding: 3px;
+    color: #D9C6B5;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}

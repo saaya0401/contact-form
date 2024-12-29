@@ -53,15 +53,17 @@
     align-items: center;
 }
 
-.contact-form__input-name {
-    background-color: #f4f4f4;
+.contact-form__name {
     width: 45%;
+}
+.contact-form__name-input{
+    background-color: #f4f4f4;
+    width: 100%;
     padding: 10px 30px;
     font-size: 14px;
     border: none;
     border-radius: 3px;
 }
-
 .contact-form__input--separate input::placeholder {
     color: #BEB1A6;
 }

@@ -16,11 +16,22 @@
             </div>
             <div class="contact-form__group-content">
                 <div class="contact-form__input--separate">
-                    <input class="contact-form__input-name" type="text" name="first_name" placeholder="例: 山田" value="{{old('first_name')}}">
-                    <input class="contact-form__input-name" type="text" name="last_name" placeholder="例: 太郎" value="{{old('last_name')}}">
-                </div>
-                <div class="form__error">
-
+                    <div class="contact-form__name">
+                        <input class="contact-form__name-input" type="text" name="first_name" placeholder="例: 山田" value="{{old('first_name')}}">
+                        <div class="form__error">
+                            @error('first_name')
+                            {{$message}}
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="contact-form__name">
+                        <input class="contact-form__name-input" type="text" name="last_name" placeholder="例: 太郎" value="{{old('last_name')}}">
+                        <div class="form__error">
+                            @error('last_name')
+                            {{$message}}
+                            @enderror
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,7 +49,9 @@
                     </label>
                 </div>
                 <div class="form__error">
-                    
+                    @error('gender')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -52,7 +65,9 @@
                     <input type="text" name="email" placeholder="例: test@example.com" value="{{old('email')}}">
                 </div>
                 <div class="form__error">
-                    
+                    @error('email')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -70,7 +85,9 @@
                     <input class="contact-form__input-tel" type="text" name="tel[2]" placeholder="5678" value="{{old('tel.2')}}">
                 </div>
                 <div class="form__error">
-                    
+                    @error('tel.*')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -84,7 +101,9 @@
                     <input type="text" name="address" placeholder="例: 東京都渋谷区千駄ヶ谷1-2-3" value="{{old('address')}}">
                 </div>
                 <div class="form__error">
-                    
+                    @error('address')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -98,7 +117,6 @@
                     <input type="text" name="building" placeholder="例: 千駄ヶ谷マンション101" value="{{old('building')}}">
                 </div>
                 <div class="form__error">
-                    
                 </div>
             </div>
         </div>
@@ -111,10 +129,15 @@
                 <div class="contact-form__input--category">
                     <select name="category_id" class="contact-form__category-select" required>
                         <option value="">選択してください</option>
+                        @foreach($categories as $category)
+                        <option value="{{$category['id']}}">{{$category['content']}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form__error">
-                    
+                    @error('category_id')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -128,7 +151,9 @@
                     <textarea name="detail" placeholder="お問い合わせ内容をご記載ください">{{old('detail')}}</textarea>
                 </div>
                 <div class="form__error">
-                    
+                    @error('detail')
+                    {{$message}}
+                    @enderror
                 </div>
             </div>
         </div>

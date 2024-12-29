@@ -1,5 +1,5 @@
 .contact__content {
-    padding: 40px;
+    padding: 30px;
     height: 90vh;
     
 }
@@ -13,7 +13,7 @@
 .contact-form__heading {
     max-width: 1230px;
     text-align: center;
-    padding: 0 0 40px;
+    padding: 0 0 30px;
     margin: 0 auto;
 }
 .contact-form {

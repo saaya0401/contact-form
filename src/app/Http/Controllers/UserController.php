@@ -29,6 +29,7 @@ class UserController extends Controller
     }
     public function admin(){
         $contacts=Contact::with('category')->get();
+        $contacts=Contact::Paginate(7);
         return view('auth.admin', compact('contacts'));
     }
 }

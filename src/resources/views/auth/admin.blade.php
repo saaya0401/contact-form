@@ -55,45 +55,26 @@
             <th class="admin-form__header-email">メールアドレス</th>
             <th class="admin-form__header-category" colspan="2">お問い合わせの種類</th>
         </tr>
+        @foreach($contacts as $contact)
         <tr class="admin-form__row">
             <td class="admin-form__content">
-                山田 太郎
+                <span class="admin-form__name">{{$contact['first_name']}}</span>
+                <span class="admin-form__name">{{$contact['last_name']}}</span>
             </td>
             <td class="admin-form__content">
-                男性
+                {{$contact['gender']}}
             </td>
             <td class="admin-form__content">
-                test@example.com
+                {{$contact['email']}}
             </td>
             <td class="admin-form__content">
                 <div class="admin-form__content-category">
-                    商品の交換について
+                    {{$contact['category']['content']}}
                 </div>
                 <form class="admin-form__button">
                     <button class="admin-form__modal">詳細</button>
                 </form>
             </td>
         </tr>
-
-        <tr class="admin-form__row">
-            <td class="admin-form__content">
-                山田 太郎
-            </td>
-            <td class="admin-form__content">
-                男性
-            </td>
-            <td class="admin-form__content">
-                test@example.com
-            </td>
-            <td class="admin-form__content">
-                <div class="admin-form__content-category">
-                    商品の交換について
-                </div>
-                <form class="admin-form__button">
-                    <button class="admin-form__modal">詳細</button>
-                </form>
-            </td>
-        </tr>
-    </table>
-</div>
+        @endforeach
 @endsection

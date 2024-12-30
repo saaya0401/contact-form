@@ -46,7 +46,27 @@
         <div class="export-button">
             <a href="" class="export-link">エクスポート</a>
         </div>
-        <div class="paginate-area"></div>
+        <table class="paginate-area">
+            <tr class="paginate-table__row">
+                @if($contacts->onFirstPage())
+                    <td class="previous"><span>&lt;</span></td>
+                @else
+                    <td class="previous"><a class="mark" href="{{$contacts->previousPageUrl()}}" rel="preview">&lt;</a></td>
+                @endif
+                @for($page=1; $page<= $contacts->lastPage(); $page++)
+                @if($contacts->currentPage()== $page)
+                    <td class="active"><span>{{$page}}</span></td>
+                @else
+                    <td class="other"><a href="{{$contacts->url($page)}}">{{$page}}</a></td>
+                @endif
+                @endfor
+                @if($contacts->hasMorePages())
+                    <td class="next"><a class="mark" href="{{$contacts->nextPageUrl()}}" rel="next">&gt;</a></td>
+                @else
+                    <td class="next"><span>&gt;</span></td>
+                @endif
+            </tr>
+        </table>
     </div>
     <table class="admin-form">
         <tr class="admin-form__row-header">
@@ -77,4 +97,6 @@
             </td>
         </tr>
         @endforeach
+    </table>
+</div>
 @endsection

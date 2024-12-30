@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -14,8 +15,10 @@ use App\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/register', [UserController::class, 'register']);
+Route::post('login', [UserController::class, 'login']);
 Route::middleware('auth')->group(function (){
-    Route::get('/admin', [AuthController::class, 'admin']);
+    Route::get('/admin', [UserController::class, 'admin']);
 });
 Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);

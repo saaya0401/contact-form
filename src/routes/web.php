@@ -19,6 +19,7 @@ Route::post('/register', [UserController::class, 'register']);
 Route::post('login', [UserController::class, 'login']);
 Route::middleware('auth')->group(function (){
     Route::get('/admin', [UserController::class, 'admin']);
+    Route::get('/search', [UserController::class, 'search']);
 });
 Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);

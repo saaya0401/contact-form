@@ -25,7 +25,7 @@ class RegisterRequest extends FormRequest
     {
         return [
             'name'=>['required'],
-            'email'=>['required', 'email'],
+            'email'=>['required', 'email', 'unique:contacts,email'],
             'password'=>['required']
         ];
     }
@@ -35,6 +35,7 @@ class RegisterRequest extends FormRequest
             'name.required'=>'お名前を入力してください',
             'email.required'=>'メールアドレスを入力してください',
             'email.email'=>'メールアドレスは「ユーザー名＠ドメイン」形式で入力してください',
+            'email.unique'=>'このメールアドレスはすでに登録されています',
             'password.required'=>'パスワードを入力してください'
         ];
     }

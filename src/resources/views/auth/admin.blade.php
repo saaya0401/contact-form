@@ -19,20 +19,26 @@
         <form action="/search" method="get" class="admin__search-form">
         @csrf
             <div class="search-keyword">
-                <input type="text" name="keyword" class="search-keyword__input" placeholder="名前やメールアドレスを入力してください">
+                <input type="text" name="keyword" class="search-keyword__input" placeholder="名前やメールアドレスを入力してください" value="{{old('keyword', request('keyword'))}}">
             </div>
             <div class="search-gender">
-                <select class="search-gender__select">
+                <select class="search-gender__select" name="gender">
                     <option value="">性別</option>
+                    <option value="男性" {{old('gender', request('gender'))== "男性" ? 'selected' : ''}}>男性</option>
+                    <option value="女性" {{old('gender', request('gender'))== "女性" ? 'selected' : ''}}>女性</option>
+                    <option value="その他" {{old('gender', request('gender'))== "その他" ? 'selected' : ''}}>その他</option>
                 </select>
             </div>
             <div class="search-category">
-                <select class="search-category__select">
+                <select class="search-category__select" name="category_id">
                     <option value="">お問い合わせの種類</option>
+                    @foreach($categories as $category)
+                    <option value="{{$category['id']}}" {{old('category_id', request('category_id'))}}>{{$category['content']}}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="search-date">
-                <input type="date" class="search-date__input">
+                <input type="date" class="search-date__input" name="created_at" value="{{old('created_at', request('created_at'))}}">
             </div>
             <div class="search-button">
                 <button class="search-button__submit" type="submit">検索</button>

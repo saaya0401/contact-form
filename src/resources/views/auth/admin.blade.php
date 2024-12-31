@@ -49,9 +49,11 @@
         </div>
     </div>
     <div class="page-action">
-        <div class="export-button">
-            <a href="" class="export-link">エクスポート</a>
-        </div>
+        <form action="/export" method="post" class="export-button">
+            @csrf
+            <button type="submit" class="export-link">エクスポート</button>
+            <input type="text">
+        </form>
         <table class="paginate-area">
             <tr class="paginate-table__row">
                 @if($contacts->onFirstPage())

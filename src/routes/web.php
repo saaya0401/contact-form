@@ -25,3 +25,4 @@ Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/edit', [ContactController::class, 'edit']);
 Route::post('/thanks', [ContactController::class, 'thanks']);
+Route::post('/export', [UserController::class, 'export']);

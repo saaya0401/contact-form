@@ -74,6 +74,7 @@
             </tr>
         </table>
     </div>
+    
     <table class="admin-form">
         <tr class="admin-form__row-header">
             <th class="admin-form__header-name">お名前</th>
@@ -97,12 +98,13 @@
                 <div class="admin-form__content-category">
                     {{$contact['category']['content']}}
                 </div>
-                <form class="admin-form__button">
-                    <button class="admin-form__modal">詳細</button>
-                </form>
+                @livewire('modal', ['contact' => $contact], key($contact->id))
             </td>
         </tr>
         @endforeach
     </table>
+
+ 
+    
 </div>
 @endsection

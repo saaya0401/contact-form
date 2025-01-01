@@ -51,8 +51,11 @@
     <div class="page-action">
         <form action="/export" method="post" class="export-button">
             @csrf
+            <input type="hidden" name="category_id" value="{{ request('category_id') }}">
+            <input type="hidden" name="keyword" value="{{ request('keyword') }}">
+            <input type="hidden" name="gender" value="{{ request('gender') }}">
+            <input type="hidden" name="created_at" value="{{ request('created_at') }}">
             <button type="submit" class="export-link">エクスポート</button>
-            <input type="text">
         </form>
         <table class="paginate-area">
             <tr class="paginate-table__row">

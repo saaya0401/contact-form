@@ -11,8 +11,15 @@
 ### Laravel環境構築
 1. docker-compose exec php bash
 1. composer install
-1. .env.exampleファイルから.envを作成し、環境変数を変更
-1. php artisan key:generate
+1. cp .env.example .env
+1. .envファイルの以下の環境変数を変更
+```
+DB_HOST=mysql
+DB_DATABASE=new_laravel_db
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass
+```
+5. php artisan key:generate
 1. php artisan migrate
 1. php artisan db:seed
 1. composer require livewire/livewire
